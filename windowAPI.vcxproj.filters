@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="2DGameFramework">
+      <UniqueIdentifier>{d4228325-ab86-4575-8d38-59949d73a0ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround">
+      <UniqueIdentifier>{84513b37-b08c-49e4-bd15-6f8f6752b18e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\SingletonBase">
+      <UniqueIdentifier>{8785790c-f93f-411d-90ff-bd2e05bd6334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\Manager">
+      <UniqueIdentifier>{ddfb3dc3-ec5a-4752-880c-db14429b78a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\image">
+      <UniqueIdentifier>{73affc36-76a7-43ee-9dc2-13a65e5a5209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\Utils">
+      <UniqueIdentifier>{dbe4a488-41b4-49cf-8cff-49dbace1d532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Bullets">
+      <UniqueIdentifier>{df5535ce-8bd9-4fd9-9a63-d453b4350b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\txtData">
+      <UniqueIdentifier>{b0748259-6cd0-418a-aed2-412f85d75813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\timer">
+      <UniqueIdentifier>{51ba2134-09a6-4e4a-a113-fec61f8f954a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\animation">
+      <UniqueIdentifier>{fb20fc3d-f78c-4396-a07a-e840a861adde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\effect">
+      <UniqueIdentifier>{636d27ed-03a5-48da-b1cf-b7f6dad3d4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFramework\action">
+      <UniqueIdentifier>{936fa078-09d7-4d41-8553-9de447d9f438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\mapTool">
+      <UniqueIdentifier>{0cf80374-8a75-4209-83ae-2a0fad9fa2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Scene">
+      <UniqueIdentifier>{31132d2f-e74b-4e95-b9f4-8590c5ed8928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Player">
+      <UniqueIdentifier>{082d21c2-a39f-433e-857f-c51d57d6ddf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\enemy">
+      <UniqueIdentifier>{adfdbdcd-5b6c-43bb-8f33-857792be8a10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\collision">
+      <UniqueIdentifier>{90622bee-6129-45e7-ad65-41b8b9be5a15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\UI">
+      <UniqueIdentifier>{70632e7d-a151-4852-8a2f-a9be1812223e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Crops">
+      <UniqueIdentifier>{be636882-e18f-4e7e-ab90-13f4c1dd2792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Crops\Bean">
+      <UniqueIdentifier>{6160ae57-ee69-4ca1-95a3-29c76e3d69d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Object">
+      <UniqueIdentifier>{1bbea278-991d-4df1-afee-6445bdbce816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Crops\Potato">
+      <UniqueIdentifier>{f5be8681-5fd8-4e3b-8fc8-88ae4c9bf1d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Crops\Cabbage">
+      <UniqueIdentifier>{86f07bfe-0a2b-4f6d-b694-8fd592905b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Item">
+      <UniqueIdentifier>{442a31a1-0d99-416e-a23b-9d4fe6fc0f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Item\Seed">
+      <UniqueIdentifier>{e6ab52e5-2dc9-4fd6-bc34-23039298f962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Item\Other">
+      <UniqueIdentifier>{9d290e1f-2e35-4dc8-864f-ead1bd20f7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Crops\Heart">
+      <UniqueIdentifier>{7f825646-f9cd-441e-904f-828a9ed6e995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Item\Shop_Item">
+      <UniqueIdentifier>{12700e3a-0e32-4900-b935-589b5a9316e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\Crops\Pumpkin">
+      <UniqueIdentifier>{84d4ca43-6dc9-4840-a4e7-4a7e207a243f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="commonMacroFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gameNode.h">
+      <Filter>2DGameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="playGround.h">
+      <Filter>playGround</Filter>
+    </ClInclude>
+    <ClInclude Include="singletonBase.h">
+      <Filter>2DGameFramework\SingletonBase</Filter>
+    </ClInclude>
+    <ClInclude Include="randomFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="keyManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>2DGameFramework\image</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="bullets.h">
+      <Filter>playGround\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="txtData.h">
+      <Filter>2DGameFramework\txtData</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>2DGameFramework\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="timeManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>2DGameFramework\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="effect.h">
+      <Filter>2DGameFramework\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="effectManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="soundManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="action.h">
+      <Filter>2DGameFramework\action</Filter>
+    </ClInclude>
+    <ClInclude Include="iniDataManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="D2Dmanager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="keyAniManager.h">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>playGround\mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="tool.h">
+      <Filter>playGround\mapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="base.h">
+      <Filter>playGround\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>playGround\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="world.h">
+      <Filter>playGround\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="enemyManager.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="rabbit.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="collision.h">
+      <Filter>playGround\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>playGround\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CropManager.h">
+      <Filter>playGround\Crops</Filter>
+    </ClInclude>
+    <ClInclude Include="Crop.h">
+      <Filter>playGround\Crops</Filter>
+    </ClInclude>
+    <ClInclude Include="Bean.h">
+      <Filter>playGround\Crops\Bean</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>playGround\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>playGround\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Well.h">
+      <Filter>playGround\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Potato.h">
+      <Filter>playGround\Crops\Potato</Filter>
+    </ClInclude>
+    <ClInclude Include="Cabbage.h">
+      <Filter>playGround\Crops\Cabbage</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>playGround\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>playGround\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManager.h">
+      <Filter>playGround\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="seed_potato.h">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClInclude>
+    <ClInclude Include="seed_cabbage.h">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClInclude>
+    <ClInclude Include="seed_bean.h">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClInclude>
+    <ClInclude Include="Pickaxe.h">
+      <Filter>playGround\Item\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="fertilizer.h">
+      <Filter>playGround\Item\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>playGround\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>playGround\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Heart.h">
+      <Filter>playGround\Crops\Heart</Filter>
+    </ClInclude>
+    <ClInclude Include="seed_heart.h">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClInclude>
+    <ClInclude Include="HeartBag.h">
+      <Filter>playGround\Item\Shop_Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SeedBag.h">
+      <Filter>playGround\Item\Shop_Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Pumpkin.h">
+      <Filter>playGround\Crops\Pumpkin</Filter>
+    </ClInclude>
+    <ClInclude Include="seed_pumpkin.h">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClInclude>
+    <ClInclude Include="gun.h">
+      <Filter>playGround\Item\Shop_Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CopterParked.h">
+      <Filter>playGround\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="maple.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="scorpion.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="boss.h">
+      <Filter>playGround\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="progressBar.h">
+      <Filter>playGround\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="winMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameNode.cpp">
+      <Filter>2DGameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="playGround.cpp">
+      <Filter>playGround</Filter>
+    </ClCompile>
+    <ClCompile Include="keyManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>2DGameFramework\image</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>2DGameFramework\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="bullets.cpp">
+      <Filter>playGround\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="txtData.cpp">
+      <Filter>2DGameFramework\txtData</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>2DGameFramework\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timeManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>2DGameFramework\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="effect.cpp">
+      <Filter>2DGameFramework\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="effectManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="soundManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="action.cpp">
+      <Filter>2DGameFramework\action</Filter>
+    </ClCompile>
+    <ClCompile Include="iniDataManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="D2Dmanager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="keyAniManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>playGround\mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>playGround\mapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="base.cpp">
+      <Filter>playGround\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>playGround\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="state.cpp">
+      <Filter>playGround\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp">
+      <Filter>playGround\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="enemyManager.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="rabbit.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="collision.cpp">
+      <Filter>playGround\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>playGround\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CropManager.cpp">
+      <Filter>playGround\Crops</Filter>
+    </ClCompile>
+    <ClCompile Include="Crop.cpp">
+      <Filter>playGround\Crops</Filter>
+    </ClCompile>
+    <ClCompile Include="Bean.cpp">
+      <Filter>playGround\Crops\Bean</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>playGround\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>playGround\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Well.cpp">
+      <Filter>playGround\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Potato.cpp">
+      <Filter>playGround\Crops\Potato</Filter>
+    </ClCompile>
+    <ClCompile Include="Cabbage.cpp">
+      <Filter>playGround\Crops\Cabbage</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>playGround\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>playGround\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManager.cpp">
+      <Filter>playGround\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="seed_potato.cpp">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClCompile>
+    <ClCompile Include="seed_cabbage.cpp">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClCompile>
+    <ClCompile Include="seed_bean.cpp">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClCompile>
+    <ClCompile Include="Pickaxe.cpp">
+      <Filter>playGround\Item\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="fertilizer.cpp">
+      <Filter>playGround\Item\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>playGround\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>playGround\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Heart.cpp">
+      <Filter>playGround\Crops\Heart</Filter>
+    </ClCompile>
+    <ClCompile Include="seed_heart.cpp">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClCompile>
+    <ClCompile Include="HeartBag.cpp">
+      <Filter>playGround\Item\Shop_Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SeedBag.cpp">
+      <Filter>playGround\Item\Shop_Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Pumpkin.cpp">
+      <Filter>playGround\Crops\Pumpkin</Filter>
+    </ClCompile>
+    <ClCompile Include="seed_pumpkin.cpp">
+      <Filter>playGround\Item\Seed</Filter>
+    </ClCompile>
+    <ClCompile Include="gun.cpp">
+      <Filter>playGround\Item\Shop_Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CopterParked.cpp">
+      <Filter>playGround\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="maple.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="scorpion.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="boss.cpp">
+      <Filter>playGround\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="progressBar.cpp">
+      <Filter>playGround\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="windowAPI.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="windowAPI.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>
