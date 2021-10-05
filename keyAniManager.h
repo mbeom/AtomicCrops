@@ -14,9 +14,12 @@ private:
 private:
 	arrAnimation _mTotalAnimation;
 
-public:
 	keyAniManager();
 	~keyAniManager();
+
+	friend singletonBase;
+
+public:
 
 	HRESULT init();
 	void release();

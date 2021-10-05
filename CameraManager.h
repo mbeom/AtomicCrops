@@ -8,10 +8,12 @@ private:
 	float camera_x, camera_y;
 	float _x, _y;
 
-public:
-
 	CameraManager();
 	~CameraManager();
+
+	friend singletonBase;
+
+public:
 
 	D2D1_POINT_2F center_pos;
 	D2D1_MATRIX_3X2_F scale_mat;

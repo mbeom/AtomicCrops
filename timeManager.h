@@ -7,10 +7,12 @@ class timeManager : public singletonBase<timeManager>
 private:
 	timer* _timer;
 
-public:
 	timeManager();
 	~timeManager();
 
+	friend singletonBase;
+
+public:
 	int world_time;
 	int day;
 	float world_count;

@@ -121,7 +121,7 @@ void scorpion::render()
 	
 	WCHAR temp[128];
 	//swprintf_s(temp, L"%d, %d", (int)_state, (int)is_fired);
-	D2DMANAGER->DrawTextD2DCenter(D2DMANAGER->white_brush, L"메이플스토리", 20, temp, _rc.left, _rc.top, _rc.right, _rc.bottom);
+	//D2DMANAGER->DrawTextD2DCenter(D2DMANAGER->white_brush, L"메이플스토리", 20, temp, _rc.left, _rc.top, _rc.right, _rc.bottom);
 	D2DMANAGER->pRenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 }
 

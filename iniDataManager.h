@@ -37,10 +37,12 @@ private:
 
 	int _listNum;
 
-public:
 	iniDataManager();
 	~iniDataManager();
 
+	friend singletonBase;
+
+public:
 	HRESULT init();
 	void release();
 

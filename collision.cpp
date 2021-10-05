@@ -65,18 +65,25 @@ void collision::update()
 	// 플레이어와 에너미 충돌처리
 	player_AND_enemy();
 
+	// 플레이어와 오브젝트 상호작용
 	player_AND_object();
 
+	// 플레이어와 작물들 상호작용
 	player_AND_crops();
 
+	// 플레이어와 아이템 상호작용
 	player_AND_Item();
 
+	// 에너미 타일충돌 (4방향)
 	enemy_AND_CrossTiles();
 
+	// 에너미 타일 대각선 충돌
 	enemy_AND_diagonalTiles();
 
+	// 작물 수확시 UI 폰트 재생
 	_fontEffect->update();
 
+	// 이펙트 업데이트
 	EFFECTMANAGER->update();
 }
 
@@ -99,6 +106,19 @@ void collision::render()
 	}
 	//D2DMANAGER->pRenderTarget->SetTransform(D2D1::Matrix3x2F::Identity());
 
+	if (KEYMANAGER->isToggleKey(VK_F1))
+	{
+		for (int i = 0; i < 2; i++)
+		{
+			D2DMANAGER->Rectangle(D2DMANAGER->white_brush, _map->get_tiles()[tileIndex[i]]->getRectangle());
+		}
+
+		for (int i = 0; i < 3; i++)
+		{
+			D2DMANAGER->Rectangle(D2DMANAGER->white_brush, _map->get_tiles()[tileIndex2[i]]->getRectangle());
+		}
+	}
+
 	_fontEffect->render();
 
 	EFFECTMANAGER->render();
@@ -110,7 +130,7 @@ void collision::player_AND_CrossTiles()
 {
 	D2D1_RECT_F collision;
 
-	int tileIndex[2];	//타일 검출에 필요한 인덱스
+	//int tileIndex[2];	//타일 검출에 필요한 인덱스
 	int tileX, tileY;	//플레이어가 밟고 있는 타일의 인덱스
 
 	//가상의 판정렉트에 현재 렉트를 대입해주자
@@ -200,7 +220,7 @@ void collision::player_AND_diagonalTiles()
 {
 	D2D1_RECT_F collision;
 
-	int tileIndex[3];	//타일 검출에 필요한 인덱스
+	//int tileIndex[3];	//타일 검출에 필요한 인덱스
 	int tileX, tileY;	//플레이어가 밟고 있는 타일의 인덱스
 
 	//가상의 판정렉트에 현재 렉트를 대입해주자
@@ -212,41 +232,41 @@ void collision::player_AND_diagonalTiles()
 	switch (_player->get_playerInfo().moving_direction)
 	{
 	case Player_Direction::LEFT_TOP:
-		tileIndex[0] = tileX + (tileY * mapTileX);
-		tileIndex[2] = tileX + (tileY + 1) * mapTileX;
-		tileIndex[1] = (tileX + 1) + tileY * mapTileX;
+		tileIndex2[0] = tileX + (tileY * mapTileX);
+		tileIndex2[2] = tileX + (tileY + 1) * mapTileX;
+		tileIndex2[1] = (tileX + 1) + tileY * mapTileX;
 		break;
 	case Player_Direction::RIGHT_TOP:
-		tileIndex[0] = (tileX + tileY * mapTileX) + 1;
-		tileIndex[2] = (tileX + (tileY + 1) * mapTileX) + 1;
-		tileIndex[1] = (tileX) + tileY * mapTileX;
+		tileIndex2[0] = (tileX + tileY * mapTileX) + 1;
+		tileIndex2[2] = (tileX + (tileY + 1) * mapTileX) + 1;
+		tileIndex2[1] = (tileX) + tileY * mapTileX;
 		break;
 	case Player_Direction::LEFT_BOTTOM:
-		tileIndex[0] = tileX + (tileY * mapTileX);
-		tileIndex[1] = tileX + (tileY + 1) * mapTileX;
-		tileIndex[2] = (tileX + 1) + (tileY + 1) * mapTileX;
+		tileIndex2[0] = tileX + (tileY * mapTileX);
+		tileIndex2[1] = tileX + (tileY + 1) * mapTileX;
+		tileIndex2[2] = (tileX + 1) + (tileY + 1) * mapTileX;
 		break;
 	case Player_Direction::RIGHT_BOTTOM:
-		tileIndex[0] = (tileX + tileY * mapTileX) + 1;
-		tileIndex[1] = (tileX + (tileY + 1) * mapTileX) + 1;
-		tileIndex[2] = (tileX)+(tileY + 1) * mapTileX;
+		tileIndex2[0] = (tileX + tileY * mapTileX) + 1;
+		tileIndex2[1] = (tileX + (tileY + 1) * mapTileX) + 1;
+		tileIndex2[2] = (tileX)+(tileY + 1) * mapTileX;
 		break;
 	default:
-		tileIndex[0] = NULL;
-		tileIndex[1] = NULL;
-		tileIndex[2] = NULL;
+		tileIndex2[0] = NULL;
+		tileIndex2[1] = NULL;
+		tileIndex2[2] = NULL;
 		break;
 	}
 
-	tile_Attribute attribute[3] = { _map->get_tiles()[tileIndex[0]]->getAttribute(), _map->get_tiles()[tileIndex[1]]->getAttribute(), _map->get_tiles()[tileIndex[2]]->getAttribute() };
+	tile_Attribute attribute[3] = { _map->get_tiles()[tileIndex2[0]]->getAttribute(), _map->get_tiles()[tileIndex2[1]]->getAttribute(), _map->get_tiles()[tileIndex2[2]]->getAttribute() };
 
 	for (int i = 0; i < 3; ++i)
 	{
-		if (tileIndex[i] == NULL) break;
+		if (tileIndex2[i] == NULL) break;
 
 		D2D1_RECT_F temp;
-		D2D1_RECT_F tile = _map->get_tiles()[tileIndex[i]]->getRectangle();
-		tile_Attribute _attribute = _map->get_tiles()[tileIndex[i]]->getAttribute();
+		D2D1_RECT_F tile = _map->get_tiles()[tileIndex2[i]]->getRectangle();
+		tile_Attribute _attribute = _map->get_tiles()[tileIndex2[i]]->getAttribute();
 
 		if (attribute[i] == tile_Attribute::WALL || attribute[i] == tile_Attribute::WATER_COL || attribute[i] == tile_Attribute::WATER_ROW)
 			attribute[i] = tile_Attribute::WALL;
@@ -263,7 +283,7 @@ void collision::player_AND_diagonalTiles()
 				{
 					if (attribute[1] == tile_Attribute::WALL)
 					{
-						D2D1_RECT_F tile = _map->get_tiles()[tileIndex[0]]->getRectangle();
+						D2D1_RECT_F tile = _map->get_tiles()[tileIndex2[0]]->getRectangle();
 
 						collision.left = tile.right;
 						collision.right = collision.left + TILESIZE;
@@ -310,7 +330,7 @@ void collision::player_AND_diagonalTiles()
 				{
 					if (attribute[1] == tile_Attribute::WALL)
 					{
-						D2D1_RECT_F tile = _map->get_tiles()[tileIndex[0]]->getRectangle();
+						D2D1_RECT_F tile = _map->get_tiles()[tileIndex2[0]]->getRectangle();
 
 						collision.right = tile.left;
 						collision.left = collision.right - 40;

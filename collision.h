@@ -28,6 +28,9 @@ private:
 	D2D1_RECT_F current_tile_rect;
 	D2D1_RECT_F _farm;
 
+	int tileIndex[2];
+	int tileIndex2[3];
+
 	tile* tile_onMouse;
 	tile* current_tile;
 	tile* left_tile;

@@ -16,10 +16,12 @@ private:
 
 	mapSceneList _mSceneList;
 
-public:
 	sceneManager();
 	~sceneManager();
 
+	friend singletonBase;
+
+public:
 	HRESULT init();
 	void release();
 	void update();

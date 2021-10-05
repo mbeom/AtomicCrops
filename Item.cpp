@@ -28,9 +28,11 @@ void Item::update()
 		count += TIMEMANAGER->getElapsedTime();
 		if (count > 1.2f) count = 0;
 
+		// 아이템이 땅에 떨어지는 중력처리
 		object->gravity += object->gravity * TIMEMANAGER->getElapsedTime() * 10;
 		if (object->gravity > 5.0) object->is_drop = true;
 
+		// 아이템이 드랍되었다면
 		if (object->is_drop)
 		{
 			if (count > 1.0f && count < 1.2f)
@@ -41,6 +43,7 @@ void Item::update()
 			}
 		}
 
+		// 아이템일 경우는 둥둥 떠다니는 효과처리
 		if (!object->is_taken && !object->is_drop)
 		{
 			object->x += object->speed * cosf(object->angle);
@@ -48,6 +51,7 @@ void Item::update()
 			object->rc = D2DMANAGER->RectMakeCenter(object->x, object->y, object->img->getWidth(), object->img->getHeight());
 		}
 
+		// 플레이어가 가까이간다면 아이템이 플레이어에게 이동하여 획득처리
 		if (object->is_taken)
 		{
 			object->x += object->speed * cosf(object->angle);
@@ -56,6 +60,7 @@ void Item::update()
 		}
 	}
 
+	// 상점에 있는 아이템은 아이템 설명 UI와 폰트 설정
 	if (is_selling && is_closed)
 	{
 		if (!is_ready)
@@ -104,6 +109,7 @@ void Item::render()
 		if (object != NULL)
 			object->img->render(object->rc.left, object->rc.top);
 
+		// 아이템 UI 설명 렌더
 		if (is_closed && is_ready)
 		{
 			bottom_rect.img->render(bottom_rect.rc.left, bottom_rect.rc.top, 0.7f);

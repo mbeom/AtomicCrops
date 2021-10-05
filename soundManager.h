@@ -32,10 +32,12 @@ private:
 	arrSounds _mTotalSounds;
 	vector<pair<string, string>> name_list;
 
-public:
 	soundManager();
 	~soundManager();
 
+	friend singletonBase;
+
+public:
 	HRESULT init();
 	void release();
 	void update();

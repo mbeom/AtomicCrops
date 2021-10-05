@@ -151,6 +151,7 @@ void CropManager::check_square()
 			_cropList[i]->animation_setting();
 
 			int interval = 0;
+
 			for (auto iter = delete_list.begin(); iter != delete_list.end(); iter++)
 			{
 				_cropList.erase(_cropList.begin() + (*iter - interval));

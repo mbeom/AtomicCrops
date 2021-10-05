@@ -4,6 +4,12 @@
 
 class D2Dmanager : public singletonBase<D2Dmanager>
 {
+private:
+	D2Dmanager();
+	~D2Dmanager();
+
+	friend singletonBase;
+
 public:
 
 	ID2D1Factory* pD2DFactory;
@@ -18,9 +24,6 @@ public:
 	ID2D1SolidColorBrush* defaultBrush;			//기본 검정색 브러쉬
 	ID2D1SolidColorBrush* _mybrush;			//기본 검정색 브러쉬
 	ID2D1SolidColorBrush* white_brush;
-
-	D2Dmanager();
-	~D2Dmanager();
 
 	HRESULT Init();
 	void release();

@@ -1,0 +1,35 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
+  Item.cpp
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(40): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(42): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(51): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(59): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(75): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(77): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(80): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(85): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(90): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(92): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(95): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\item.cpp(97): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ItemManager.cpp
+  collision.cpp
+c:\users\owner\desktop\최종포폴\최종포폴\progressbar.h(26): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\progressbar.h(27): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(19): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(139): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(140): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(229): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(230): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(417): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(418): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(602): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(622): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(638): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(640): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(1146): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(1147): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(1237): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\owner\desktop\최종포폴\최종포폴\collision.cpp(1238): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  windowAPI.vcxproj -> C:\Users\Owner\Desktop\최종포폴\최종포폴\.\프레임워크.exe
